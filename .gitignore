@@ -12,3 +12,4 @@ _deps
 node_modules
 *.exe
 .cmake
+build
