@@ -1,0 +1,20 @@
+{
+  "name": "cmake-series",
+  "version": "1.0.0",
+  "description": "use cross-platform build system generator  -- CMake , to build my mordern c/c++ projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
