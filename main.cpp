@@ -1,14 +1,14 @@
 #include <iostream>
-#include <concepts>
-
-template <typename T>
-requires std::integral<T>
-T add (T a, T b) {
-    return a + b;
-}
+#include "foo.h"
+#include "operations.h"
 
 int main(){
-    std::cout << "Hello from C++ 20 with CMake on Linux/Windows" << std::endl;
-    std::cout << "The sum is: "<< add(7, 5) << std::endl;
+    foo();
+    std::cout << "5 + 10" << " = " << add(5,10) << std::endl;
+    std::cout << "5.2 + 10.2" << " = " << add(5.2,10.2) << std::endl;
+    std::cout << "5 - 10" << " = " << subtract(5,10) << std::endl;
+    std::cout << "5 * 10" << " = " << multiply(5,10) << std::endl;
+    std::cout << "5 / 10" << " = " << divide(5,10) << std::endl;
+    std::cout << "5 / 0" << " = " << divide(5, 0) << std::endl;
     return 0;
 }
